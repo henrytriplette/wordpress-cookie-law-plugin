@@ -1,0 +1,244 @@
+<strong>Informativa estesa sui Cookie</strong>
+
+I Cookie sono costituiti da porzioni di codice installate all'interno del browser che assistono il Titolare nell’erogazione del servizio in base alle finalità descritte. Alcune delle finalità di installazione dei Cookie potrebbero, inoltre, necessitare del consenso dell'Utente.
+
+<strong>Cookie tecnici e di statistica aggregata</strong>
+<ul>
+	<li><strong>Attività strettamente necessarie al funzionamento</strong></li>
+</ul>
+Questo sito utilizza Cookie per salvare la sessione dell'utente e per svolgere altre attività strettamente necessarie al funzionamento dello stesso, ad esempio in relazione alla distribuzione del traffico.
+<ul>
+	<li><strong>Attività di salvataggio delle preferenze, ottimizzazione e statistica</strong></li>
+</ul>
+Questo sito utilizza Cookie per salvare le preferenze di navigazione ed ottimizzare l'esperienza di navigazione dell'Utente. Fra questi Cookie rientrano, ad esempio, quelli per impostare la lingua e la valuta o per la gestione di statistiche da parte del titolare del sito.
+
+<strong>Altre tipologie di Cookie o strumenti terzi che potrebbero farne utilizzo</strong>
+
+Alcuni dei servizi elencati di seguito raccolgono statistiche in forma aggregata e potrebbero non richiedere il consenso dell'Utente o potrebbero essere gestiti direttamente dal titolare – a seconda di quanto descritto – senza l'ausilio di terzi.
+<ul>
+	<li><strong>Commento dei contenuti</strong></li>
+</ul>
+I servizi di commento consentono agli Utenti di formulare e rendere pubblici propri commenti riguardanti il contenuto di questa Applicazione.
+Gli Utenti, a seconda delle impostazioni decise dal Titolare, possono lasciare il commento anche in forma anonima. Nel caso tra i Dati Personali rilasciati dall’Utente ci sia l’email, questa potrebbe essere utilizzata per inviare notifiche di commenti riguardanti lo stesso contenuto. Gli Utenti sono responsabili del contenuto dei propri commenti.
+Nel caso in cui sia installato un servizio di commenti fornito da soggetti terzi, è possibile che, anche nel caso in cui gli Utenti non utilizzino il servizio di commento, lo stesso raccolga dati di traffico relativi alle pagine in cui il servizio di commento è installato.
+
+<strong>Disqus (Disqus)</strong>
+
+Disqus è un servizio di commento dei contenuti fornito da Big Heads Labs Inc.
+
+Dati personali raccolti: Cookie e Dati di utilizzo.
+
+Luogo del trattamento : USA – <a href="http://docs.disqus.com/help/30/">Privacy Policy</a> – <a href="https://help.disqus.com/customer/portal/articles/1657951">Opt out</a>
+<ul>
+	<li><strong>Interazione con le piattaforme di live chat</strong></li>
+</ul>
+Questi servizi permettono di interagire con le piattaforme di live chat, gestite da soggetti terzi, direttamente dalle pagine di questa Applicazione. Ciò permette all'Utente di contattare il servizio di supporto di questa Applicazione o a questa Applicazione di contattare l'Utente mentre sta navigando le sue pagine.
+Nel caso in cui sia installato un servizio di interazione con le piattaforme di live chat, è possibile che, anche nel caso gli Utenti non utilizzino il servizio, lo stesso raccolga Dati di Utilizzo relativi alle pagine in cui è installato. Inoltre, le conversazioni della live chat potrebbero essere registrate.
+
+<strong>Widget di Zopim (Zopim Technologies Pte Ltd)</strong>
+
+Il Widget di Zopim è un servizio di interazione con la piattaforma di live chat Zopim, fornito da Zopim Technologies Pte Ltd.
+
+Dati personali raccolti: Cookie e Dati di utilizzo.
+
+Luogo del trattamento : Singapore – <a href="https://www.zopim.com/privacy">Privacy Policy</a>
+<ul>
+	<li><strong>Interazione con social network e piattaforme esterne</strong></li>
+</ul>
+Questi servizi permettono di effettuare interazioni con i social network, o con altre piattaforme esterne, direttamente dalle pagine di questa Applicazione.
+Le interazioni e le informazioni acquisite da questa Applicazione sono in ogni caso soggette alle impostazioni privacy dell’Utente relative ad ogni social network.
+Nel caso in cui sia installato un servizio di interazione con i social network, è possibile che, anche nel caso gli Utenti non utilizzino il servizio, lo stesso raccolga dati di traffico relativi alle pagine in cui è installato.
+
+<strong>Pulsante Tweet e widget sociali di Twitter (Twitter, Inc.)</strong>
+
+Il pulsante Tweet e i widget sociali di Twitter sono servizi di interazione con il social network Twitter, forniti da Twitter, Inc.
+
+Dati personali raccolti: Cookie e Dati di utilizzo.
+
+Luogo del trattamento : USA – <a href="http://twitter.com/privacy">Privacy Policy</a>
+
+<strong>Pulsante +1 e widget sociali di Google+ (Google Inc.)</strong>
+
+Il pulsante +1 e i widget sociali di Google+ sono servizi di interazione con il social network Google+, forniti da Google Inc.
+
+Dati personali raccolti: Cookie e Dati di utilizzo.
+
+Luogo del trattamento : USA – <a href="http://www.google.com/intl/it/policies/privacy/">Privacy Policy</a>
+
+<strong>Pulsante Mi Piace e widget sociali di Facebook (Facebook, Inc.)</strong>
+
+Il pulsante “Mi Piace” e i widget sociali di Facebook sono servizi di interazione con il social network Facebook, forniti da Facebook, Inc.
+
+Dati personali raccolti: Cookie e Dati di utilizzo.
+
+Luogo del trattamento : USA – <a href="http://www.facebook.com/privacy/explanation.php">Privacy Policy</a>
+
+<strong>Pulsante e widget sociali di Linkedin (LinkedIn Corporation)</strong>
+
+Il pulsante e i widget sociali di Linkedin sono servizi di interazione con il social network Linkedin, forniti da LinkedIn Corporation.
+
+Dati personali raccolti: Cookie e Dati di utilizzo.
+
+Luogo del trattamento : USA – <a href="https://www.linkedin.com/legal/privacy-policy">Privacy Policy</a>
+
+<strong>Pulsante “Pin it” e widget sociali di Pinterest (Pinterest)</strong>
+
+Il pulsante “Pin it” e widget sociali di Pinterest sono servizi di interazione con la piattaforma Pinterest, forniti da Pinterest Inc.
+
+Dati personali raccolti: Cookie e Dati di utilizzo.
+
+Luogo del trattamento : USA – <a href="http://about.pinterest.com/privacy/">Privacy Policy</a>
+
+<strong>Pulsante e widget sociali di Tumblr (Tumblr Inc.)</strong>
+
+Il pulsante e i widget sociali di Tumblr sono servizi di interazione con il social network Tumblr, forniti da Tumblr Inc.
+
+Dati personali raccolti: Cookie e Dati di utilizzo.
+
+Luogo del trattamento : USA – <a href="http://www.tumblr.com/policy/en/privacy">Privacy Policy</a>
+<ul>
+	<li><strong>Pubblicità</strong></li>
+</ul>
+Questi servizi consentono di utilizzare i Dati dell’Utente per finalità di comunicazione commerciale in diverse forme pubblicitarie, quali il banner, anche in relazione agli interessi dell’Utente.
+Ciò non significa che tutti i Dati Personali vengano utilizzati per questa finalità. Dati e condizioni di utilizzo sono indicati di seguito.
+Alcuni dei servizi di seguito indicati potrebbero utilizzare Cookie per identificare l’Utente o utilizzare la tecnica del behavioral retargeting, ossia visualizzare annunci pubblicitari personalizzati in base agli interessi e al comportamento dell’Utente, rilevati anche al di fuori di questa Applicazione. Per avere maggiori informazioni in merito, ti suggeriamo di verificare le informative privacy dei rispettivi servizi.
+
+<strong>Google AdSense (Google Inc.)</strong>
+
+Google AdSense è un servizio di advertising fornito da Google Inc. Questo servizio usa il Cookie “Doubleclick”, che traccia l’utilizzo di questa Applicazione ed il comportamento dell’Utente in relazione agli annunci pubblicitari, ai prodotti e ai servizi offerti.
+L’Utente può decidere in qualsiasi momento di non usare il Cookie Doubleclick provvedendo alla sua disattivazione: <a href="http://google.com/settings/ads/onweb/optout?hl=it">google.com/settings/ads/onweb/optout?hl=it</a>.
+
+Dati personali raccolti: Cookie e Dati di utilizzo.
+
+Luogo del trattamento : USA – <a href="http://google.com/privacy/ads/">Privacy Policy</a>
+
+<strong>DoubleClick for Publishers (Google Inc.)</strong>
+
+DoubleClick for Publishers è un servizio di advertising fornito da Google Inc. con il quale il Titolare può condurre campagne pubblicitarie congiuntamente a reti pubblicitarie esterne con cui il Titolare, se non in altro modo specificato nel presente documento, non ha alcuna relazione diretta.
+Gli Utenti che non desiderano essere tracciati dalle differenti reti pubblicitarie, possono utilizzare<a href="http://www.youronlinechoices.com/">Youronlinechoices</a>. Per una comprensione dell'utilizzo dei dati da parte di Google, si prega di consultare le <a href="https://www.google.com/intl/it/policies/privacy/partners/">norme per i partner di Google</a>.
+Questo servizio usa il Cookie “Doubleclick”, che traccia l’utilizzo di @{replacement missing: it.privacy_policy_page.interpolation.this_applicationp} ed il comportamento dell’Utente in relazione agli annunci pubblicitari, ai prodotti e ai servizi offerti.
+L’Utente può decidere in qualsiasi momento di non usare il Cookie Doubleclick provvedendo alla sua disattivazione: <a href="http://google.com/settings/ads/onweb/optout?hl=it">google.com/settings/ads/onweb/optout?hl=it</a>.
+
+Dati personali raccolti: Cookie e Dati di utilizzo.
+
+Luogo del trattamento : USA – <a href="http://www.google.com/privacy/ads/">Privacy Policy</a>
+<ul>
+	<li><strong>Remarketing e Behavioral Targeting</strong></li>
+</ul>
+Questi servizi consentono a questa Applicazione ed ai suoi partner di comunicare, ottimizzare e servire annunci pubblicitari basati sull'utilizzo passato di questa Applicazione da parte dell'Utente.
+Questa attività viene effettuata tramite il tracciamento dei Dati di Utilizzo e l'uso di Cookie, informazioni che vengono trasferite ai partner a cui l'attività di remarketing e behavioral targeting è collegata.
+
+<strong>AdWords Remarketing (Google Inc.)</strong>
+
+AdWords Remarketing è un servizio di Remarketing e Behavioral Targeting fornito da Google Inc. che collega l'attività di questa Applicazione con il network di advertising Adwords ed il Cookie Doubleclick.
+
+Dati personali raccolti: Cookie e Dati di utilizzo.
+
+Luogo del trattamento : USA – <a href="http://www.google.com/intl/it/policies/privacy/">Privacy Policy</a> – <a href="http://www.google.com/settings/ads/onweb/optout">Opt Out</a>
+
+<strong>Facebook Custom Audience (Facebook, Inc.)</strong>
+
+Facebook Custom Audience è un servizio di Remarketing e Behavioral Targeting fornito da Facebook, Inc. che collega l'attività di questa Applicazione con il network di advertising Facebook.
+
+Dati personali raccolti: Cookie e Email.
+
+Luogo del trattamento : USA – <a href="https://www.facebook.com/about/privacy/">Privacy Policy</a>
+<ul>
+	<li><strong>Statistica</strong></li>
+</ul>
+I servizi contenuti nella presente sezione permettono al Titolare del Trattamento di monitorare e analizzare i dati di traffico e servono a tener traccia del comportamento dell’Utente.
+
+<strong>Google Analytics (Google Inc.)</strong>
+
+Google Analytics è un servizio di analisi web fornito da Google Inc. (“Google”). Google utilizza i Dati Personali raccolti allo scopo di tracciare ed esaminare l’utilizzo di questa Applicazione, compilare report e condividerli con gli altri servizi sviluppati da Google.
+Google potrebbe utilizzare i Dati Personali per contestualizzare e personalizzare gli annunci del proprio network pubblicitario.
+
+Dati personali raccolti: Cookie e Dati di utilizzo.
+
+Luogo del trattamento : USA – <a href="http://www.google.com/intl/it/policies/privacy/">Privacy Policy</a> – <a href="http://tools.google.com/dlpage/gaoptout?hl=it">Opt Out</a>
+
+<strong>Monitoraggio conversioni di Google AdWords (Google Inc.)</strong>
+
+Il monitoraggio conversioni di Google AdWords è un servizio di statistiche fornito da Google Inc. che collega i dati provenienti dal network di annunci Google AdWords con le azioni compiute all'interno di questa Applicazione.
+
+Dati personali raccolti: Cookie e Dati di utilizzo.
+
+Luogo del trattamento : USA – <a href="http://www.google.com/intl/it/policies/privacy/">Privacy Policy</a>
+
+<strong>Monitoraggio conversioni di Facebook Ads (Facebook, Inc.)</strong>
+
+Il monitoraggio conversioni di Facebook Ads è un servizio di statistiche fornito da Facebook, Inc. che collega i dati provenienti dal network di annunci Facebook con le azioni compiute all'interno di questa Applicazione.
+
+Dati personali raccolti: Cookie e Dati di utilizzo.
+
+Luogo del trattamento : USA – <a href="https://www.facebook.com/about/privacy/">Privacy Policy</a>
+<ul>
+	<li><strong>Visualizzazione di contenuti da piattaforme esterne</strong></li>
+</ul>
+Questi servizi permettono di visualizzare contenuti ospitati su piattaforme esterne direttamente dalle pagine di questa Applicazione e di interagire con essi.
+Nel caso in cui sia installato un servizio di questo tipo, è possibile che, anche nel caso gli Utenti non utilizzino il servizio, lo stesso raccolga dati di traffico relativi alle pagine in cui è installato.
+
+<strong>Google Fonts (Google Inc.)</strong>
+
+Google Fonts è un servizio di visualizzazione di stili di carattere gestito da Google Inc. che permette a questa Applicazione di integrare tali contenuti all’interno delle proprie pagine.
+
+Dati personali raccolti: Cookie e Dati di utilizzo.
+
+Luogo del trattamento : USA – <a href="http://www.google.it/intl/en/policies/privacy/">Privacy Policy</a>
+
+<strong>Come posso gestire i Cookie all'interno del mio browser?</strong>
+
+In aggiunta a quanto indicato in questo documento, l'Utente può gestire le preferenze relative ai Cookie direttamente all'interno del proprio browser ed impedire – ad esempio – che terze parti possano installarne. Tramite le preferenze del browser è inoltre possibile eliminare i Cookie installati in passato, incluso il Cookie in cui venga eventualmente salvato il consenso all'installazione di Cookie da parte di questo sito. È importante notare che disabilitando tutti i Cookie, il funzionamento di questo sito potrebbe essere compromesso. Puoi trovare informazioni su come gestire i Cookie nel tuo browser ai seguenti indirizzi: <a href="https://support.google.com/chrome/answer/95647?hl=en&amp;p=cpn_cookies">Google Chrome</a>,<a href="https://support.mozilla.org/it/kb/Attivare%20e%20disattivare%20i%20cookie?redirectlocale=en-US&amp;redirectslug=Enabling+and+disabling+cookies">Mozilla Firefox</a>, <a href="https://support.apple.com/kb/PH19214?viewlocale=it_IT&amp;locale=en_US">Apple Safari</a> and <a href="http://windows.microsoft.com/it-it/windows-vista/block-or-allow-cookies">Microsoft Windows Explorer</a>.
+
+<strong>Titolare del Trattamento dei Dati</strong>
+
+Nome Cognome,
+info@sitoweb.it
+
+Dal momento che l'installazione di Cookie e di altri sistemi di tracciamento operata da terze parti tramite i servizi utilizzati all'interno di questa Applicazione non può essere tecnicamente controllata dal Titolare, ogni riferimento specifico a Cookie e sistemi di tracciamento installati da terze parti è da considerarsi indicativo. Per ottenere informazioni complete, consulta la privacy policy degli eventuali servizi terzi elencati in questo documento.
+
+Vista l'oggettiva complessità legata all'identificazione delle tecnologie basate sui Cookie ed alla loro integrazione molto stretta con il funzionamento del web, l'Utente è invitato a contattare il Titolare qualora volesse ricevere qualunque approfondimento relativo all'utilizzo dei Cookie stessi e ad eventuali utilizzi degli stessi – ad esempio ad opera di terzi – effettuati tramite questo sito.
+
+<strong>Definizioni e riferimenti legali</strong>
+
+<strong>Dati Personali (o Dati)</strong>
+
+Costituisce dato personale qualunque informazione relativa a persona fisica, identificata o identificabile, anche indirettamente, mediante riferimento a qualsiasi altra informazione, ivi compreso un numero di identificazione personale.
+
+<strong>Dati di Utilizzo</strong>
+
+Sono i dati personali raccolti in maniera automatica dall’Applicazione (o dalle applicazioni di parti terze che la stessa utilizza), tra i quali: gli indirizzi IP o i nomi a dominio dei computer utilizzati dall’Utente che si connette all’Applicazione, gli indirizzi in notazione URI (Uniform Resource Identifier), l’orario della richiesta, il metodo utilizzato nel sottoporre la richiesta al server, la dimensione del file ottenuto in risposta, il codice numerico indicante lo stato della risposta dal server (buon fine, errore, ecc.) il Paese di provenienza, le caratteristiche del browser e del sistema operativo utilizzati dal visitatore, le varie connotazioni temporali della visita (ad esempio il tempo di permanenza su ciascuna pagina) e i dettagli relativi all’itinerario seguito all’interno dell’Applicazione, con particolare riferimento alla sequenza delle pagine consultate, ai parametri relativi al sistema operativo e all’ambiente informatico dell’Utente.
+
+<strong>Utente</strong>
+
+L'individuo che utilizza questa Applicazione, che deve coincidere con l'Interessato o essere da questo autorizzato ed i cui Dati Personali sono oggetto del trattamento.
+
+<strong>Interessato</strong>
+
+La persona fisica o giuridica cui si riferiscono i Dati Personali.
+
+<strong>Responsabile del Trattamento (o Responsabile)</strong>
+
+La persona fisica, giuridica, la pubblica amministrazione e qualsiasi altro ente, associazione od organismo preposti dal Titolare al trattamento dei Dati Personali, secondo quanto predisposto dalla presente privacy policy.
+
+<strong>Titolare del Trattamento (o Titolare)</strong>
+
+La persona fisica, giuridica, la pubblica amministrazione e qualsiasi altro ente, associazione od organismo cui competono, anche unitamente ad altro titolare, le decisioni in ordine alle finalità, alle modalità del trattamento di dati personali ed agli strumenti utilizzati, ivi compreso il profilo della sicurezza, in relazione al funzionamento e alla fruizione di questa Applicazione. Il Titolare del Trattamento, salvo quanto diversamente specificato, è il proprietario di questa Applicazione.
+
+<strong>Questa Applicazione</strong>
+
+Lo strumento hardware o software mediante il quale sono raccolti i Dati Personali degli Utenti.
+
+<strong>Cookie</strong>
+
+Piccola porzione di dati conservata all'interno del dispositivo dell'Utente.
+
+<strong>Riferimenti legali</strong>
+
+Avviso agli Utenti europei: la presente informativa privacy è redatta in adempimento degli obblighi previsti dall’Art. 10 della Direttiva n. 95/46/CE, nonché a quanto previsto dalla Direttiva 2002/58/CE, come aggiornata dalla Direttiva 2009/136/CE, in materia di Cookie.
+
+Questa informativa privacy riguarda esclusivamente questa Applicazione.
+
+&nbsp;
+
+&nbsp;

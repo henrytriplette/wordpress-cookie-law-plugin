@@ -45,7 +45,7 @@ class Triplette_Cookie_Law_Settings {
 		add_action( 'init', array( $this, 'init_settings' ), 11 );
 
 		// Add Notice
-		add_action( 'init', array( $this, 'admin_install_notice' ) );
+		// add_action( 'init', array( $this, 'admin_install_notice' ) );
 
 		// Register plugin settings
 		add_action( 'admin_init' , array( $this, 'register_settings' ) );
@@ -99,8 +99,8 @@ class Triplette_Cookie_Law_Settings {
 	 * @since   1.0.0
 	 * @return  string
 	 */
-	public function admin_install_notice ( $msg, $uri ) {
-		$msg['error'][] = array( 'setting' => 'triplette_cookie_law_settings', 'msg' => sprintf( __( 'Cookie Law Plugin is currently disabled. <a href="%s">Enable it on the settings page</a>', 'triplette-cookie-law' ), $uri ) );
+	public function admin_install_notice ( $msg ) {
+		$msg['error'][] = array( 'setting' => 'triplette_cookie_law_settings', 'msg' => sprintf( __( 'Cookie Law Plugin is currently disabled.Enable it on the settings page', 'triplette-cookie-law' ) ) );
 		return $msg;
 	} // End admin_install_notice ()
 

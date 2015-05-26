@@ -105,7 +105,7 @@ class Triplette_Cookie_Law {
 		add_action( 'admin_enqueue_scripts', array( $this, 'admin_enqueue_styles' ), 10, 1 );
 
 		// Add notice
-		add_action( 'admin_notices', 'admin_install_notice' ); 
+		// add_action( 'admin_notices', 'admin_install_notice' ); 
 
 		// Load API for generic admin functions
 		if ( is_admin() ) {
@@ -176,76 +176,76 @@ class Triplette_Cookie_Law {
 		
 		if ( get_option( 'wpt_triplette_cookies_enable' ) == 'enable' ) {
 			wp_enqueue_script( $this->_token . '-frontend-params' );
+
+			// Prepare Params
+			$cookie_type = get_option( 'wpt_triplette_cookies_type' );
+			$cookie_type_format = '';
+			foreach ($cookie_type as $type) {
+				$cookie_type_format[$type] = Array();
+			}
+			
+			$hideprivacysettingstab = false;
+			if ( get_option( 'wpt_triplette_cookies_privacy_tab' ) == 'on' ) { $hideprivacysettingstab = true; }
+			
+			$ignoreDoNotTrack = false;
+			if ( get_option( 'wpt_triplette_cookies_do_not_track' ) == 'on' ) { $ignoreDoNotTrack = true; }
+			
+			// Create Params
+			$params = array(
+			  'triplette_cookies_type' => json_encode($cookie_type_format),
+			  'triplette_cookies_consent' => get_option( 'wpt_triplette_cookies_consent' ),
+			  'triplette_cookies_banner_refresh' => get_option( 'wpt_triplette_cookies_banner_refresh' ),
+			  'triplette_cookies_style' => str_replace ('"', '', get_option( 'wpt_triplette_cookies_style' ) ),
+			  'triplette_cookies_position_banner' =>  str_replace ('"', '', get_option( 'wpt_triplette_cookies_position_banner' ) ),
+			  'triplette_cookies_position_tag' =>  str_replace ('"', '', get_option( 'wpt_triplette_cookies_position_tag' ) ),
+			  'triplette_cookies_server' => get_site_url(),
+			  'triplette_cookies_privacy_tab' => $hideprivacysettingstab,
+			  'triplette_cookies_banner_display' => get_option( 'wpt_triplette_cookies_banner_display' ),
+			  'triplette_cookies_do_not_track' => $ignoreDoNotTrack,
+			  
+			  'tct_general_social_media_title' => get_option( 'wpt_tct_general_social_media_title' ),
+			  'tct_general_social_media_description' => get_option( 'wpt_tct_general_social_media_description' ),
+			  'tct_general_analytics_title' => get_option( 'wpt_tct_general_analytics_title' ),
+			  'tct_general_analytics_description' => get_option( 'wpt_tct_general_analytics_description' ),
+			  'tct_general_advertising_title' => get_option( 'wpt_tct_general_advertising_title' ),
+			  'tct_general_advertising_description' => get_option( 'wpt_tct_general_advertising_description' ),
+			  'tct_general_necessary_title' => get_option( 'wpt_tct_general_necessary_title' ),
+			  'tct_general_necessary_description' => get_option( 'wpt_tct_general_necessary_description' ),
+			  'tct_general_default_cookie_title' => get_option( 'wpt_tct_general_default_cookie_title' ),
+			  'tct_general_default_cookie_description' => get_option( 'wpt_tct_general_default_cookie_description' ),
+			  'tct_slide_title' => get_option( 'wpt_tct_slide_title' ),
+			  'tct_slide_title_implicit' => get_option( 'wpt_tct_slide_title_implicit' ),
+			  'tct_slide_custom_cookie' => get_option( 'wpt_tct_slide_custom_cookie' ),
+			  'tct_slide_see_details' => get_option( 'wpt_tct_slide_see_details' ),
+			  'tct_slide_see_details_implicit' => get_option( 'wpt_tct_slide_see_details_implicit' ),
+			  'tct_slide_hide_details_link' => get_option( 'wpt_tct_slide_hide_details_link' ),
+			  'tct_slide_allow_cookies_button' => get_option( 'wpt_tct_slide_allow_cookies_button' ),
+			  'tct_slide_allow_cookies_button_implicit' => get_option( 'wpt_tct_slide_allow_cookies_button_implicit' ),
+			  'tct_privacy_settings' => get_option( 'wpt_tct_privacy_settings' ),
+			  'tct_privacy_settings_dialog' => get_option( 'wpt_tct_privacy_settings_dialog' ),
+			  'tct_privacy_settings_dialog_small' => get_option( 'wpt_tct_privacy_settings_dialog_small' ),
+			  'tct_privacy_settings_dialog_subtitle' => get_option( 'wpt_tct_privacy_settings_dialog_subtitle' ),
+			  'tct_privacy_settings_policy_link' => get_option( 'wpt_tct_privacy_settings_policy_link' ),
+			  'tct_privacy_settings_policy_title' => get_option( 'wpt_tct_privacy_settings_policy_title' ),
+			  'tct_privacy_settings_cookie_policy_link' => get_option( 'wpt_tct_privacy_settings_cookie_policy_link' ),
+			  'tct_privacy_settings_cookie_policy_title' => get_option( 'wpt_tct_privacy_settings_cookie_policy_title' ),
+			  'tct_privacy_settings_dialog_all_websites' => get_option( 'wpt_tct_privacy_settings_dialog_all_websites' ),
+			  'tct_privacy_settings_dialog_consent' => get_option( 'wpt_tct_privacy_settings_dialog_consent' ),
+			  'tct_privacy_settings_dialog_i_consent' => get_option( 'wpt_tct_privacy_settings_dialog_i_consent' ),
+			  'tct_privacy_settings_dialog_i_decline' => get_option( 'wpt_tct_privacy_settings_dialog_i_decline' ),
+			  'tct_privacy_settings_dialog_no_cookies' => get_option( 'wpt_tct_privacy_settings_dialog_no_cookies' ),
+			  'tct_global_settings_dialog_title' => get_option( 'wpt_tct_global_settings_dialog_title' ),
+			  'tct_global_settings_dialog_title_small' => get_option( 'wpt_tct_global_settings_dialog_title_small' ),
+			  'tct_global_settings_dialog_subtitle' => get_option( 'wpt_tct_global_settings_dialog_subtitle' ),
+			  'tct_global_settings_back_to' => get_option( 'wpt_tct_global_settings_back_to' ),
+			  'tct_global_settings_ask' => get_option( 'wpt_tct_global_settings_ask' ),
+			  'tct_global_always_allow' => get_option( 'wpt_tct_global_always_allow' ),
+			  'tct_global_never_allow' => get_option( 'wpt_tct_global_never_allow' ),
+			  'tct_general_close_window' => get_option( 'wpt_tct_general_close_window' ),
+			  
+			);		
+			wp_localize_script( $this->_token . '-frontend-params', 'tC', $params );
 		}
-		// Prepare Params
-		$cookie_type = get_option( 'wpt_triplette_cookies_type' );
-		$cookie_type_format = '';
-		foreach ($cookie_type as $type) {
-			$cookie_type_format[$type] = Array();
-		}
-		
-		$hideprivacysettingstab = false;
-		if ( get_option( 'wpt_triplette_cookies_privacy_tab' ) == 'on' ) { $hideprivacysettingstab = true; }
-		
-		$ignoreDoNotTrack = false;
-		if ( get_option( 'wpt_triplette_cookies_do_not_track' ) == 'on' ) { $ignoreDoNotTrack = true; }
-		
-		// Create Params
-		$params = array(
-		  'triplette_cookies_type' => json_encode($cookie_type_format),
-		  'triplette_cookies_consent' => get_option( 'wpt_triplette_cookies_consent' ),
-		  'triplette_cookies_banner_refresh' => get_option( 'wpt_triplette_cookies_banner_refresh' ),
-		  'triplette_cookies_style' => str_replace ('"', '', get_option( 'wpt_triplette_cookies_style' ) ),
-		  'triplette_cookies_position_banner' =>  str_replace ('"', '', get_option( 'wpt_triplette_cookies_position_banner' ) ),
-		  'triplette_cookies_position_tag' =>  str_replace ('"', '', get_option( 'wpt_triplette_cookies_position_tag' ) ),
-		  'triplette_cookies_server' => get_site_url(),
-		  'triplette_cookies_privacy_tab' => $hideprivacysettingstab,
-		  'triplette_cookies_banner_display' => get_option( 'wpt_triplette_cookies_banner_display' ),
-		  'triplette_cookies_do_not_track' => $ignoreDoNotTrack,
-		  
-		  'tct_general_social_media_title' => get_option( 'wpt_tct_general_social_media_title' ),
-		  'tct_general_social_media_description' => get_option( 'wpt_tct_general_social_media_description' ),
-		  'tct_general_analytics_title' => get_option( 'wpt_tct_general_analytics_title' ),
-		  'tct_general_analytics_description' => get_option( 'wpt_tct_general_analytics_description' ),
-		  'tct_general_advertising_title' => get_option( 'wpt_tct_general_advertising_title' ),
-		  'tct_general_advertising_description' => get_option( 'wpt_tct_general_advertising_description' ),
-		  'tct_general_necessary_title' => get_option( 'wpt_tct_general_necessary_title' ),
-		  'tct_general_necessary_description' => get_option( 'wpt_tct_general_necessary_description' ),
-		  'tct_general_default_cookie_title' => get_option( 'wpt_tct_general_default_cookie_title' ),
-		  'tct_general_default_cookie_description' => get_option( 'wpt_tct_general_default_cookie_description' ),
-		  'tct_slide_title' => get_option( 'wpt_tct_slide_title' ),
-		  'tct_slide_title_implicit' => get_option( 'wpt_tct_slide_title_implicit' ),
-		  'tct_slide_custom_cookie' => get_option( 'wpt_tct_slide_custom_cookie' ),
-		  'tct_slide_see_details' => get_option( 'wpt_tct_slide_see_details' ),
-		  'tct_slide_see_details_implicit' => get_option( 'wpt_tct_slide_see_details_implicit' ),
-		  'tct_slide_hide_details_link' => get_option( 'wpt_tct_slide_hide_details_link' ),
-		  'tct_slide_allow_cookies_button' => get_option( 'wpt_tct_slide_allow_cookies_button' ),
-		  'tct_slide_allow_cookies_button_implicit' => get_option( 'wpt_tct_slide_allow_cookies_button_implicit' ),
-		  'tct_privacy_settings' => get_option( 'wpt_tct_privacy_settings' ),
-		  'tct_privacy_settings_dialog' => get_option( 'wpt_tct_privacy_settings_dialog' ),
-		  'tct_privacy_settings_dialog_small' => get_option( 'wpt_tct_privacy_settings_dialog_small' ),
-		  'tct_privacy_settings_dialog_subtitle' => get_option( 'wpt_tct_privacy_settings_dialog_subtitle' ),
-		  'tct_privacy_settings_policy_link' => get_option( 'wpt_tct_privacy_settings_policy_link' ),
-		  'tct_privacy_settings_policy_title' => get_option( 'wpt_tct_privacy_settings_policy_title' ),
-		  'tct_privacy_settings_cookie_policy_link' => get_option( 'wpt_tct_privacy_settings_cookie_policy_link' ),
-		  'tct_privacy_settings_cookie_policy_title' => get_option( 'wpt_tct_privacy_settings_cookie_policy_title' ),
-		  'tct_privacy_settings_dialog_all_websites' => get_option( 'wpt_tct_privacy_settings_dialog_all_websites' ),
-		  'tct_privacy_settings_dialog_consent' => get_option( 'wpt_tct_privacy_settings_dialog_consent' ),
-		  'tct_privacy_settings_dialog_i_consent' => get_option( 'wpt_tct_privacy_settings_dialog_i_consent' ),
-		  'tct_privacy_settings_dialog_i_decline' => get_option( 'wpt_tct_privacy_settings_dialog_i_decline' ),
-		  'tct_privacy_settings_dialog_no_cookies' => get_option( 'wpt_tct_privacy_settings_dialog_no_cookies' ),
-		  'tct_global_settings_dialog_title' => get_option( 'wpt_tct_global_settings_dialog_title' ),
-		  'tct_global_settings_dialog_title_small' => get_option( 'wpt_tct_global_settings_dialog_title_small' ),
-		  'tct_global_settings_dialog_subtitle' => get_option( 'wpt_tct_global_settings_dialog_subtitle' ),
-		  'tct_global_settings_back_to' => get_option( 'wpt_tct_global_settings_back_to' ),
-		  'tct_global_settings_ask' => get_option( 'wpt_tct_global_settings_ask' ),
-		  'tct_global_always_allow' => get_option( 'wpt_tct_global_always_allow' ),
-		  'tct_global_never_allow' => get_option( 'wpt_tct_global_never_allow' ),
-		  'tct_general_close_window' => get_option( 'wpt_tct_general_close_window' ),
-		  
-		);		
-		wp_localize_script( $this->_token . '-frontend-params', 'tC', $params );
-		
 	} // End enqueue_scripts ()
 
 	/**

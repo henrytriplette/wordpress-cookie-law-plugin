@@ -137,8 +137,8 @@ var cc =
 		learnMore: "Maggiorni informazioni",
 		seeDetails: "Dettagli",
 		seeDetailsImplicit: "Cambia Impostazioni",
-		CookiePolicyLink: "#",
-		CookiePolicyLinkUrl: "Cookie Policy",
+		cookiePolicyLink: "Cookie Policy",
+		cookiePolicyLinkUrl: "#",
 		hideDetails: "Nascondi dettagli",
 		savePreference: 'Salva Impostazioni',
 		saveForAllSites: 'Salva Impostazioni',
@@ -151,8 +151,8 @@ var cc =
 		privacySettingsDialogTitleB: "per questo sito web",
 		privacySettingsDialogSubtitle: "Alcune funzionalità necessitano la tua approvazione per poter esser attivate.",
 		closeWindow: "Chiudi",
-		privacyPolicyLink: "#",
-		privacyPolicyTitle: "Visualizza Privacy Policy",
+		privacyPolicyLink: "Visualizza Privacy Policy",
+		privacyPolicyLinkUrl: "#",
 		changeForAllSitesLink: "Cambia le impostazioni globali",
 		preferenceUseGlobal: 'Usa impostazoni globali',
 		preferenceConsent: "Acconsento",
@@ -644,7 +644,7 @@ var cc =
 				}
 			});
 			jQuery('#cc-notification-wrapper p').append(' - <a class="cc-link" href="#" id="cc-notification-moreinfo">'+cc.strings.seeDetails+'</a>');
-			jQuery('#cc-notification-wrapper p').append(' - <a class="cc-link" href="'+cc.strings.CookiePolicyLinkUrl+'" id="cc-notification-cookiepolicylink">'+cc.strings.CookiePolicyLink+'</a>');
+			jQuery('#cc-notification-wrapper p').append(' - <a class="cc-link" href="'+cc.strings.cookiePolicyLinkUrl+'" id="cc-notification-cookiepolicylink">'+cc.strings.cookiePolicyLink+'</a>');
 			if(cc.settings.consenttype == "implicit")
 			{
 				jQuery('#cc-notification-moreinfo').html(cc.strings.seeDetailsImplicit);
@@ -1074,7 +1074,7 @@ var cc =
 		{
 			data = '<div id="cc-tag" class="cc-tag-'+cc.settings.tagPosition+'">'+
 						'<a class="cc-link" href="#" id="cc-tag-button" title="'+cc.strings.privacySettings+'"><span>'+cc.strings.privacySettings+'</span></a> - '+
-						'<a class="cc-link" href="'+cc.strings.privacyPolicyLink+'" id="cc-link-policy" title="'+cc.strings.privacyPolicyTitle+'"><span>'+cc.strings.privacyPolicyTitle+'</span></a>'+
+						'<a class="cc-link" href="'+cc.strings.privacyPolicyLinkUrl+'" id="cc-link-policy" title="'+cc.strings.privacyPolicyLink+'"><span>'+cc.strings.privacyPolicyLink+'</span></a>'+
 					'</div>';
 			jQuery('body').prepend(data);
 			jQuery('#cc-tag').addClass(cc.settings.style);
