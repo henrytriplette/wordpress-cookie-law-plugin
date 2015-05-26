@@ -44,6 +44,9 @@ class Triplette_Cookie_Law_Settings {
 		// Initialise settings
 		add_action( 'init', array( $this, 'init_settings' ), 11 );
 
+		// Add Notice
+		add_action( 'init', array( $this, 'admin_install_notice' ) );
+
 		// Register plugin settings
 		add_action( 'admin_init' , array( $this, 'register_settings' ) );
 
@@ -91,6 +94,17 @@ class Triplette_Cookie_Law_Settings {
 	}
 
 	/**
+	 * Add Notice on first install
+	 * @access  public
+	 * @since   1.0.0
+	 * @return  string
+	 */
+	public function admin_install_notice ( $msg, $uri ) {
+		$msg['error'][] = array( 'setting' => 'triplette_cookie_law_settings', 'msg' => sprintf( __( 'Cookie Law Plugin is currently disabled. <a href="%s">Enable it on the settings page</a>', 'triplette-cookie-law' ), $uri ) );
+		return $msg;
+	} // End admin_install_notice ()
+
+	/**
 	 * Add settings link to plugin list table
 	 * @param  array $links Existing links
 	 * @return array 		Modified links
@@ -111,6 +125,14 @@ class Triplette_Cookie_Law_Settings {
 			'title'					=> __( 'Base Settings', 'triplette-cookie-law' ),
 			'description'			=> __( 'Cookie Plugin Basic Settings.', 'triplette-cookie-law' ),
 			'fields'				=> array(
+				array(
+					'id' 			=> 'triplette_cookies_enable',
+					'label'			=> __( 'Enable Plugin', 'triplette-cookie-law' ),
+					'description'	=> __( 'Enable plugin after configuration in complete', 'triplette-cookie-law' ),
+					'type'			=> 'select',
+					'options'		=> array( 'enable' => 'Enable Plugin', 'disable' => 'Disable Plugin' ),
+					'default'		=> 'disable'
+				),
 				array(
 					'id' 			=> 'triplette_cookies_type',
 					'label'			=> __( 'Cookies Types', 'triplette-cookie-law' ),

@@ -18,8 +18,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>
                 .---. .---.
                :     : o   :    me want cookie!
            _..-:   o :     :-.._    /
-       .-''  '  `---' `---' "   ``-.    
-     .'   "   '  "  .    "  . '  "  `.  
+       .-''  '  `---' `---' "   ``-.
+     .'   "   '  "  .    "  . '  "  `.
     :   '.---.,,.,...,.,.,.,..---.  ' ;
     `. " `.                     .' " .'
      `.  '`.                   .' ' .'
@@ -100,7 +100,7 @@ var cc =
 		collectStatistics: false,
 		tagPosition: 'bottom-right',
 		useSSL: false,
-		serveraddr: 'http://cookieconsent.silktide.com/',
+		serveraddr: window.location.protocol + "//" + window.location.host + window.location.pathname,
 		clearprefs: false,
 		consenttype: 'explicit',
 		onlyshowbanneronce: false,
@@ -120,50 +120,52 @@ var cc =
 		noJsBlocksWarning: "Developer: Warning! It doesn't look like you have set up Cookie Consent correctly.  You must follow all steps of the setup guide at http://silktide.com/cookieconsent/code.  If you believe you are seeing this message in error, you can use the overridewarnings setting (see docs for more information).",
 		noKeyWarning: "Developer: Warning! You have set the plugin to only show within the EU, but you have not provided an API key for the IP Info DB.  Check the documentation at http://silktide.com/cookieconsent for more information",
 		invalidKeyWarning: "Developer: Warning! You must provide a valid API key for IP Info DB.  Check the documentation at http://silktide.com/cookieconsent for more information",
-		necessaryDefaultTitle: "Strictly necessary",
+		necessaryDefaultTitle: "Fondamentali",
 		socialDefaultTitle: "Social media",
 		analyticsDefaultTitle: "Analytics",
 		advertisingDefaultTitle: "Advertising",
 		defaultTitle: "Default cookie title",
-		necessaryDefaultDescription: "Some cookies on this website are strictly necessary and cannot be disabled.",
-		socialDefaultDescription: "Facebook, Twitter and other social websites need to know who you are to work properly.",
-		analyticsDefaultDescription: "We anonymously measure your use of this website to improve your experience.",
-		advertisingDefaultDescription: "Adverts will be chosen for you automatically based on your past behaviour and interests.",
+		necessaryDefaultDescription: "Alcuni cookies sono fondamentali per l\'utilizzo del sito e non possno esser disabilitati.",
+		socialDefaultDescription: "Facebook, Twitter e altri social necessitano di identificare l\'utente per funzionare correttamente.",
+		analyticsDefaultDescription: "Misuriamo in modo anonimo l\'utilizzo del sito per migliorare l\'esperienza.",
+		advertisingDefaultDescription: "Gli annunci saranno scelti automaticamente in base a interessi e azioni passate.",
 		defaultDescription: "Default cookie description.",
-		notificationTitle: "Your experience on this site will be improved by allowing cookies",
-		notificationTitleImplicit: "We use cookies to ensure you get the best experience on our website",
+		notificationTitle: "Questo sito o gli strumenti terzi da questo utilizzati si avvalgono di cookie necessari al funzionamento ed utili alle finalità illustrate nella cookie policy. Se vuoi saperne di più o negare il consenso a tutti o ad alcuni cookie, consulta cookie settings. Chiudendo questo banner, scorrendo questa pagina, cliccando su un link o proseguendo la navigazione in altra maniera, acconsenti all’uso dei cookie.",
+		notificationTitleImplicit: "Questo sito o gli strumenti terzi da questo utilizzati si avvalgono di cookie necessari al funzionamento ed utili alle finalità illustrate nella cookie policy. Se vuoi saperne di più o negare il consenso a tutti o ad alcuni cookie, consulta cookie settings. Chiudendo questo banner, scorrendo questa pagina, cliccando su un link o proseguendo la navigazione in altra maniera, acconsenti all’uso dei cookie.",
 		poweredBy: "Cookie Consent plugin for the EU cookie law",
 		privacyPolicy: "Privacy policy",
-		learnMore: "Learn more",
-		seeDetails: "see details",
-		seeDetailsImplicit: "change your settings",
-		hideDetails: "hide details",
-		savePreference: 'Save preference',
-		saveForAllSites: 'Save for all sites',
-		allowCookies: 'Allow cookies',
-		allowCookiesImplicit: 'Close',
-		allowForAllSites: 'Allow for all sites',
-		customCookie: 'This website uses a custom type of cookie which needs specific approval',
-		privacySettings: "Privacy settings",
-		privacySettingsDialogTitleA: "Privacy settings",
-		privacySettingsDialogTitleB: "for this website",
-		privacySettingsDialogSubtitle: "Some features of this website need your consent to remember who you are.",
-		closeWindow: "Close window",
+		learnMore: "Maggiorni informazioni",
+		seeDetails: "Dettagli",
+		seeDetailsImplicit: "Cambia Impostazioni",
+		CookiePolicyLink: "#",
+		CookiePolicyLinkUrl: "Cookie Policy",
+		hideDetails: "Nascondi dettagli",
+		savePreference: 'Salva Impostazioni',
+		saveForAllSites: 'Salva Impostazioni',
+		allowCookies: 'Consenti cookies',
+		allowCookiesImplicit: 'Chiudi',
+		allowForAllSites: 'Consenti Globalmente',
+		customCookie: 'Questo sito utilizza cookies personalizzati che necessita approvazione specifica.',
+		privacySettings: "Impostazioni Privacy",
+		privacySettingsDialogTitleA: "Impostazioni Privacy",
+		privacySettingsDialogTitleB: "per questo sito web",
+		privacySettingsDialogSubtitle: "Alcune funzionalità necessitano la tua approvazione per poter esser attivate.",
+		closeWindow: "Chiudi",
 		privacyPolicyLink: "#",
-		privacyPolicyTitle: "View Privacy Policy",
-		changeForAllSitesLink: "Change settings for all websites",
-		preferenceUseGlobal: 'Use global setting',
-		preferenceConsent: "I consent",
-		preferenceDecline: "I decline",
-		preferenceAsk: 'Ask me each time',
-		preferenceAlways: "Always allow",
-		preferenceNever: "Never allow",
-		notUsingCookies: "This website does not use any cookies.",
+		privacyPolicyTitle: "Visualizza Privacy Policy",
+		changeForAllSitesLink: "Cambia le impostazioni globali",
+		preferenceUseGlobal: 'Usa impostazoni globali',
+		preferenceConsent: "Acconsento",
+		preferenceDecline: "Rifiuto",
+		preferenceAsk: 'Chiedi conferma ogni volta',
+		preferenceAlways: "Consenti sempre",
+		preferenceNever: "Rifiuta sempre",
+		notUsingCookies: "Questo sito web non utilizza cookies.",
 		clearedCookies: "Your cookies have been cleared, you will need to reload this page for the settings to have effect.",
-		allSitesSettingsDialogTitleA: "Privacy settings",
-		allSitesSettingsDialogTitleB: "for all websites",
-		allSitesSettingsDialogSubtitle: "You may consent to these cookies for all websites that use this plugin.",
-		backToSiteSettings: "Back to website settings"
+		allSitesSettingsDialogTitleA: "Impostazoni Privacy ",
+		allSitesSettingsDialogTitleB: "per tutti i siti web",
+		allSitesSettingsDialogSubtitle: "Puoi accettare i cookies per tutti i siti dotati di questo plugin.",
+		backToSiteSettings: "Indietro"
 	},
 
 	onconsent: function(cookieType, input)
@@ -369,13 +371,12 @@ var cc =
 		cc.settings.bannerPosition = "cc-"+cc.settings.bannerPosition;
 		if(cc.settings.useSSL)
 		{
-			cc.settings.serveraddr = window.location.href;
+			cc.settings.serveraddr = window.location.protocol + "//" + window.location.host + window.location.pathname;
 		}
 		if(window.jQuery)
 		{
 			cc.setupcomplete = true;
 			cc.setup();
-
 		}
 	},
 
@@ -565,11 +566,18 @@ var cc =
 			jQuery('head').append('<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">');
 			jQuery('body').html('').css("margin", 0);
 		}
+		url = window.location.protocol + "//" + window.location.host + window.location.pathname;
 		data = '<div id="cc-notification">' +
-
 				'<div id="cc-notification-wrapper">' +
-				'<h2><span>'+cc.strings.notificationTitle+'</span></h2>' +
+				'<p><span>'+cc.strings.notificationTitle+'</span></p>' +
+				'<div id="cc-notification-permissions">' +
+				// '<a id="cc-notification-logo" class="cc-logo" target="_blank" href="http://silktide.com/cookieconsent" title="'+cc.strings.poweredBy+'"><span>'+cc.strings.poweredBy+'</span></a> ' +
+				'</div>' +
 				'<ul class="cc-notification-buttons">' +
+
+				/* '<li>' +
+				'<a class="cc-link" href="'+url+'" id="cc-approve-button-allsites">'+cc.strings.allowForAllSites+'</a>' +
+				'</li>' + */
 				'<li>' +
 				'<a class="cc-link" href="#" id="cc-approve-button-thissite">'+cc.strings.allowCookies+'</a>' +
 				'</li>' +
@@ -585,7 +593,7 @@ var cc =
 			}
 			if(cc.settings.consenttype == 'implicit')
 			{
-				jQuery('#cc-notification h2 span').html(cc.strings.notificationTitleImplicit);
+				jQuery('#cc-notification p span').html(cc.strings.notificationTitleImplicit);
 				jQuery('#cc-approve-button-thissite').html(cc.strings.allowCookiesImplicit);
 				jQuery('#cc-approve-button-thissite').parent().after(jQuery('#cc-approve-button-allsites').parent());
 				jQuery('#cc-approve-button-allsites').hide();
@@ -635,7 +643,8 @@ var cc =
 					}
 				}
 			});
-			jQuery('#cc-notification-wrapper h2').append(' - <a class="cc-link" href="#" id="cc-notification-moreinfo">'+cc.strings.seeDetails+'</a>');
+			jQuery('#cc-notification-wrapper p').append(' - <a class="cc-link" href="#" id="cc-notification-moreinfo">'+cc.strings.seeDetails+'</a>');
+			jQuery('#cc-notification-wrapper p').append(' - <a class="cc-link" href="'+cc.strings.CookiePolicyLinkUrl+'" id="cc-notification-cookiepolicylink">'+cc.strings.CookiePolicyLink+'</a>');
 			if(cc.settings.consenttype == "implicit")
 			{
 				jQuery('#cc-notification-moreinfo').html(cc.strings.seeDetailsImplicit);
@@ -647,6 +656,7 @@ var cc =
 					{
 						if(!cc.settings.hideallsitesbutton)
 						{
+
 							jQuery('#cc-approve-button-allsites').show();
 						}
 					}
@@ -700,7 +710,7 @@ var cc =
 			}
 			if(allcustom)
 			{
-				jQuery('#cc-notification h2 span').html(cc.strings.customCookie);
+				jQuery('#cc-notification p span').html(cc.strings.customCookie);
 				jQuery('#cc-approve-button-allsites').hide();
 			} else {
 				jQuery('#cc-approve-button-allsites').click(cc.onremoteconsentgiven);
@@ -834,9 +844,9 @@ var cc =
 			cc.showminiconsent();
 		}
 	},
-	
+
 	execute: function(cookieType)
-	{					
+	{
 		if(cookieType == "necessary")
 		{
 			return;
@@ -1062,10 +1072,10 @@ var cc =
 	{
 		if(jQuery('#cc-tag').length == 0)
 		{
-			data = '<div id="cc-tag" class="cc-tag-'+cc.settings.tagPosition+'">' +
-				'<a class="cc-link" href="#" id="cc-tag-button" title="'+cc.strings.privacySettings+'"><span>'+cc.strings.privacySettings+'</span></a> | '+
-				'<a class="cc-link" href="'+cc.strings.privacyPolicyLink+'" id="cc-link-policy" title="'+cc.strings.privacyPolicyTitle+'"><span>'+cc.strings.privacyPolicyTitle+'</span></a>'+
-				'</div>';
+			data = '<div id="cc-tag" class="cc-tag-'+cc.settings.tagPosition+'">'+
+						'<a class="cc-link" href="#" id="cc-tag-button" title="'+cc.strings.privacySettings+'"><span>'+cc.strings.privacySettings+'</span></a> - '+
+						'<a class="cc-link" href="'+cc.strings.privacyPolicyLink+'" id="cc-link-policy" title="'+cc.strings.privacyPolicyTitle+'"><span>'+cc.strings.privacyPolicyTitle+'</span></a>'+
+					'</div>';
 			jQuery('body').prepend(data);
 			jQuery('#cc-tag').addClass(cc.settings.style);
 			if(!cc.settings.hideprivacysettingstab)
@@ -1127,7 +1137,9 @@ var cc =
 
 				'<p id="cc-modal-closebutton" class="cc-modal-closebutton"><a class="cc-link" href="#" title="'+cc.strings.closeWindow+'"><span>'+cc.strings.closeWindow+'</span></a></p>' +
 				'<div id="cc-modal-footer-buttons">' +
+
 				'<p id="cc-modal-global"><a class="cc-link" href="#" title="'+cc.strings.changeForAllSitesLink+'"><span>'+cc.strings.changeForAllSitesLink+'</span></a></p></div>' +
+			//'<a id="cc-notification-logo" class="cc-logo" target="_blank" href="http://silktide.com/cookieconsent" title="'+cc.strings.poweredBy+'"><span>'+cc.strings.poweredBy+'</span></a> ' +
 			'<div class="cc-clear"></div>' +
 				'</div>' +
 				'</div>';
@@ -1408,7 +1420,7 @@ var cc =
 
 		data = '<div id="cc-settingsmodal">' +
 				'<div id="cc-settingsmodal-wrapper">' +
-				'<h2>'+cc.strings.allSitesSettingsDialogTitleA+' <span>'+cc.strings.allSitesSettingsDialogTitleB+'</span></h2>' +
+				'<p>'+cc.strings.allSitesSettingsDialogTitleA+' <span>'+cc.strings.allSitesSettingsDialogTitleB+'</span></p>' +
 			'<p class="cc-subtitle">'+cc.strings.allSitesSettingsDialogSubtitle+'</p>' +
 				'<div class="cc-content">' +
 				'</div>' +
@@ -1417,6 +1429,7 @@ var cc =
 			'<div id="cc-settingsmodal-footer-buttons">' +
 				'<p id="cc-settingsmodal-secondclosebutton" class="cc-settingsmodal-closebutton"><a class="cc-link" href="#" title="'+buttontext+'"><span>'+buttontext+'</span></a></p>' +
 			'</div>' +
+				// '<a id="cc-notification-logo" class="cc-logo" target="_blank" href="http://silktide.com/cookieconsent" title="'+cc.strings.poweredBy+'"><span>'+cc.strings.poweredBy+'</span></a> ' +
 				'</div>' +
 				'</div>';
 		jQuery('body').prepend(data);
@@ -1511,62 +1524,3 @@ if(!(window.jQuery)) {
 (function(a){
 	cc.ismobile=/android.+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|e\-|e\/|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(di|rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|xda(\-|2|g)|yas\-|your|zeto|zte\-/i.test(a.substr(0,4))
 })(navigator.userAgent||navigator.vendor||window.opera);
-
-// <![CDATA[
-cc.initialise({
-	cookies: JSON.parse(tC.triplette_cookies_type),
-	settings: {	
-		refreshOnConsent: tC.triplette_cookies_banner_refresh,
-		style: tC.triplette_cookies_style,
-		bannerPosition: tC.triplette_cookies_position_banner,
-		tagPosition: tC.triplette_cookies_position_tag,
-		consenttype: tC.triplette_cookies_consent,
-		onlyshowbanneronce: tC.triplette_cookies_banner_display,
-		hideprivacysettingstab: tC.triplette_cookies_privacy_tab,
-        ignoreDoNotTrack: tC.triplette_cookies_do_not_track
-	},
-	strings: {
-		necessaryDefaultTitle: tC.tct_general_necessary_title,
-		socialDefaultTitle: tC.tct_general_social_media_title,
-		analyticsDefaultTitle: tC.tct_general_analytics_title,
-		advertisingDefaultTitle: tC.tct_general_advertising_title,
-		defaultTitle: tC.tct_general_default_cookie_title,
-		necessaryDefaultDescription: tC.tct_general_necessary_description,
-		socialDefaultDescription: tC.tct_general_social_media_description,
-		analyticsDefaultDescription: tC.tct_general_analytics_description,
-		advertisingDefaultDescription: tC.tct_general_advertising_description,
-		defaultDescription: tC.tct_general_default_cookie_description,
-		notificationTitle: tC.tct_slide_title,
-		notificationTitleImplicit: tC.tct_slide_title_implicit,
-		seeDetails: tC.tct_slide_see_details,
-		seeDetailsImplicit: tC.tct_slide_see_details_implicit,
-		hideDetails: tC.tct_slide_hide_details_link,
-		allowCookies: tC.tct_slide_allow_cookies_button,
-		allowCookiesImplicit: tC.tct_slide_allow_cookies_button_implicit,
-		customCookie: tC.tct_slide_custom_cookie,
-		privacySettings: tC.tct_privacy_settings,
-		privacySettingsDialogTitleA: tC.tct_privacy_settings_dialog,
-		privacySettingsDialogTitleB: tC.tct_privacy_settings_dialog_small,
-		privacySettingsDialogSubtitle: tC.tct_privacy_settings_dialog_subtitle,
-		privacyPolicyLink: tC.tct_privacy_settings_policy_link,
-		privacyPolicyTitle: tC.tct_privacy_settings_policy_title,
-		closeWindow: tC.tct_general_close_window,
-		privacyPolicyLink: tC.tct_privacy_settings_policy_link,
-		privacyPolicyTitle: tC.tct_privacy_settings_policy_title,
-		changeForAllSitesLink: tC.tct_privacy_settings_dialog_all_websites,
-		preferenceUseGlobal: tC.tct_privacy_settings_dialog_consent,
-		preferenceConsent: tC.tct_privacy_settings_dialog_i_consent,
-		preferenceDecline: tC.tct_privacy_settings_dialog_i_decline,
-		preferenceAsk: tC.tct_global_settings_ask,
-		preferenceAlways: tC.tct_global_always_allow,
-		preferenceNever: tC.tct_global_never_allow,
-		notUsingCookies: tC.tct_privacy_settings_dialog_no_cookies,
-		allSitesSettingsDialogTitleA: tC.tct_global_settings_dialog_title,
-		allSitesSettingsDialogTitleB: tC.tct_global_settings_dialog_title_small,
-		allSitesSettingsDialogSubtitle: tC.tct_global_settings_dialog_subtitle,
-		backToSiteSettings: tC.tct_global_settings_back_to
-	}
-});
-// ]]>
-
-

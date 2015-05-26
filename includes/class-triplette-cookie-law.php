@@ -104,6 +104,9 @@ class Triplette_Cookie_Law {
 		add_action( 'admin_enqueue_scripts', array( $this, 'admin_enqueue_scripts' ), 10, 1 );
 		add_action( 'admin_enqueue_scripts', array( $this, 'admin_enqueue_styles' ), 10, 1 );
 
+		// Add notice
+		add_action( 'admin_notices', 'admin_install_notice' ); 
+
 		// Load API for generic admin functions
 		if ( is_admin() ) {
 			$this->admin = new Triplette_Cookie_Law_Admin_API();
@@ -170,8 +173,10 @@ class Triplette_Cookie_Law {
 		wp_enqueue_script( $this->_token . '-frontend' );
 				
 		wp_register_script( $this->_token . '-frontend-params', esc_url( $this->assets_url ) . 'js/frontend-params.js', array( 'jquery' ), $this->_version );
-		wp_enqueue_script( $this->_token . '-frontend-params' );
 		
+		if ( get_option( 'wpt_triplette_cookies_enable' ) == 'enable' ) {
+			wp_enqueue_script( $this->_token . '-frontend-params' );
+		}
 		// Prepare Params
 		$cookie_type = get_option( 'wpt_triplette_cookies_type' );
 		$cookie_type_format = '';
