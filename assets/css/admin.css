@@ -1,0 +1,4 @@
+.form-table th { width: 300px; }
+
+td input,
+.wp-admin select { width: 100%; }

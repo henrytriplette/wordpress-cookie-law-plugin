@@ -1,0 +1,4 @@
+*** Triplette Cookie Law Changelog ***
+
+2015.05.22 - version 0.0.1
+ * Initial Release
