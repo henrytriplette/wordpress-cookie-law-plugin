@@ -281,7 +281,7 @@ I Dati Personali raccolti sono utilizzati per l’erogazione di servizi all’Utente
 
 <strong>Cookie policy</strong>
 
-Questa Applicazione fa utilizzo di Cookie. Per saperne di più e per un'informativa dettagliata, puoi consultare la <a href="http://www.iubenda.com/privacy-policy/535761/cookie-policy">Cookie Policy</a>.
+Questa Applicazione fa utilizzo di Cookie. Per saperne di più e per un'informativa dettagliata, puoi consultare la <a href="/cookie-policy">Cookie Policy</a>.
 
 <strong>Ulteriori informazioni sul trattamento</strong>
 
