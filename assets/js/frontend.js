@@ -92,7 +92,7 @@ var cc =
 		"GB"
 	],
 	settings: {
-		refreshOnConsent: false,
+		refreshOnConsent: true,
 		style: "dark",
 		bannerPosition: "top",
 		clickAnyLinkToConsent: false,
@@ -434,7 +434,8 @@ var cc =
 			params += "&v=1";
 			cc.settings.clearprefs = false;
 		}
-		cc.insertscript(cc.settings.serveraddr+params);
+		// cc.insertscript(cc.settings.serveraddr+params);
+		// cc.insertscript(cc.settings.serveraddr);
 		setTimeout(function(){
 			if(!cc.remoteresponse)
 			{
@@ -838,7 +839,7 @@ var cc =
 			if(cc.settings.collectStatistics)
 			{
 				params = "";
-				params += "?s=1&n=1&" + cc.calculatestatsparams();
+				// params += "?s=1&n=1&" + cc.calculatestatsparams();
 				cc.insertscript(cc.settings.serveraddr+params);
 			}
 			cc.showminiconsent();
