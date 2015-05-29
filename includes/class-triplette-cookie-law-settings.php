@@ -44,9 +44,6 @@ class Triplette_Cookie_Law_Settings {
 		// Initialise settings
 		add_action( 'init', array( $this, 'init_settings' ), 11 );
 
-		// Add Notice
-		// add_action( 'init', array( $this, 'admin_install_notice' ) );
-
 		// Register plugin settings
 		add_action( 'admin_init' , array( $this, 'register_settings' ) );
 
@@ -92,17 +89,6 @@ class Triplette_Cookie_Law_Settings {
     	wp_register_script( $this->parent->_token . '-settings-js', $this->parent->assets_url . 'js/settings' . $this->parent->script_suffix . '.js', array( 'farbtastic', 'jquery' ), '1.0.0' );
     	wp_enqueue_script( $this->parent->_token . '-settings-js' );
 	}
-
-	/**
-	 * Add Notice on first install
-	 * @access  public
-	 * @since   1.0.0
-	 * @return  string
-	 */
-	public function admin_install_notice ( $msg ) {
-		$msg['error'][] = array( 'setting' => 'triplette_cookie_law_settings', 'msg' => sprintf( __( 'Cookie Law Plugin is currently disabled.Enable it on the settings page', 'triplette-cookie-law' ) ) );
-		return $msg;
-	} // End admin_install_notice ()
 
 	/**
 	 * Add settings link to plugin list table
@@ -400,8 +386,8 @@ class Triplette_Cookie_Law_Settings {
 					'label'			=> __( 'Privacy Settings - Privacy Policy Link' , 'triplette-cookie-law' ),
 					'description'	=> '',
 					'type'			=> 'text',
-					'default'		=> '#',
-					'placeholder'	=> __( '#', 'triplette-cookie-law' )
+					'default'		=> get_site_url().'/privacy-policy',
+					'placeholder'	=> __( get_site_url().'/privacy-policy', 'triplette-cookie-law' )
 				),
 				array(
 					'id' 			=> 'tct_privacy_settings_policy_title',
@@ -416,8 +402,8 @@ class Triplette_Cookie_Law_Settings {
 					'label'			=> __( 'Privacy Settings - Cookie Policy Link' , 'triplette-cookie-law' ),
 					'description'	=> '',
 					'type'			=> 'text',
-					'default'		=> '#',
-					'placeholder'	=> __( '#', 'triplette-cookie-law' )
+					'default'		=> get_site_url().'/cookie-policy',
+					'placeholder'	=> __( get_site_url().'/cookie-policy', 'triplette-cookie-law' )
 				),
 				array(
 					'id' 			=> 'tct_privacy_settings_cookie_policy_title',

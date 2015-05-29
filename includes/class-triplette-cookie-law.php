@@ -96,16 +96,17 @@ class Triplette_Cookie_Law {
 
 		register_activation_hook( $this->file, array( $this, 'install' ) );
 
+		// Add admin Notice
+	    add_action('admin_notices', array( $this, 'install_admin_notice' ) );
+		add_action('admin_init', array( $this, 'install_nag_ignore' ) );
+
 		// Load frontend JS & CSS
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles' ), 5 );
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ), 5 );
 
 		// Load admin JS & CSS
 		add_action( 'admin_enqueue_scripts', array( $this, 'admin_enqueue_scripts' ), 10, 1 );
-		add_action( 'admin_enqueue_scripts', array( $this, 'admin_enqueue_styles' ), 10, 1 );
-
-		// Add notice
-		// add_action( 'admin_notices', 'admin_install_notice' ); 
+		add_action( 'admin_enqueue_scripts', array( $this, 'admin_enqueue_styles' ), 10, 1 );	
 
 		// Load API for generic admin functions
 		if ( is_admin() ) {
@@ -169,12 +170,12 @@ class Triplette_Cookie_Law {
 	 * @return  void
 	 */
 	public function enqueue_scripts () {
-		wp_register_script( $this->_token . '-frontend', esc_url( $this->assets_url ) . 'js/frontend' . $this->script_suffix . '.js', array( 'jquery' ), $this->_version );
-		wp_enqueue_script( $this->_token . '-frontend' );
-				
+		wp_register_script( $this->_token . '-frontend', esc_url( $this->assets_url ) . 'js/frontend' . $this->script_suffix . '.js', array( 'jquery' ), $this->_version );			
 		wp_register_script( $this->_token . '-frontend-params', esc_url( $this->assets_url ) . 'js/frontend-params.js', array( 'jquery' ), $this->_version );
 		
 		if ( get_option( 'wpt_triplette_cookies_enable' ) == 'enable' ) {
+
+			wp_enqueue_script( $this->_token . '-frontend' );
 			wp_enqueue_script( $this->_token . '-frontend-params' );
 
 			// Prepare Params
@@ -296,6 +297,95 @@ class Triplette_Cookie_Law {
 	} // End load_plugin_textdomain ()
 
 	/**
+	 * Add Custom Pages
+	 * @access  public
+	 * @since   1.0.0
+	 * @return  null
+	 */
+	public function create_pages () {
+
+
+		// get contents of a file into a string
+		/*
+		$filename = plugin_dir_url( __FILE__ )."resources/cookie_policy.txt";
+		$handle = fopen($filename, "r");
+		$contents = fread($handle, filesize($filename));
+		fclose($handle);
+		*/
+
+		$contents = 'Please insert your policy here';
+
+		$cookie_policy = array(
+			'comment_status' => 'closed', // 'closed' means no comments.
+			'post_content' => $contents, //The full text of the post.
+			'post_date' => date('Y-m-d H:i:s'), //The time post was made.
+			'post_name' => 'cookie-policy', // The name (slug) for your post
+			'post_status' => 'publish', //Set the status of the new post.
+			'post_title' => 'Cookie Policy', //The title of your post.
+			'post_type' => 'page', //Sometimes you want to post a page.
+			'tags_input' => 'cookie policy, cookies', //For tags.
+		);  
+		
+		// Insert the post into the database
+		// $page = get_page_by_title( 'Cookie Policy' );
+		// if ( is_null($page) ) {
+			wp_insert_post( $cookie_policy );
+		// }
+			
+		// get contents of a file into a string
+		/*
+		$filename = plugin_dir_url( __FILE__ )."resources/privacy_policy.txt";
+		$handle = fopen($filename, "r");
+		$contents = fread($handle, filesize($filename));
+		fclose($handle);
+		*/
+
+		$privacy_policy = array(
+			'comment_status' => 'closed', // 'closed' means no comments.
+			'post_content' => $contents, //The full text of the post.
+			'post_date' => date('Y-m-d H:i:s'), //The time post was made.
+			'post_name' => 'privacy-policy', // The name (slug) for your post
+			'post_status' => 'publish', //Set the status of the new post.
+			'post_title' => 'Privacy Policy', //The title of your post.
+			'post_type' => 'page', //Sometimes you want to post a page.
+			'tags_input' => 'privacy policy, privacy', //For tags.
+		);  
+		
+		// Insert the post into the database
+		// $page = get_page_by_title( 'Privacy Policy' );
+		// if ( is_null($page) ) {
+			wp_insert_post( $privacy_policy );
+		// }
+
+	} // End create_pages ()
+
+	/**
+	 * Add Notice on first install
+	 * @access  public
+	 * @since   1.0.0
+	 * @return  string
+	 */
+	public function install_admin_notice() {
+		global $current_user ;
+			$user_id = $current_user->ID;
+			/* Check that the user hasn't already clicked to ignore the message */
+		if ( ! get_user_meta($user_id, 'triplette_install_nag_ignore') ) {
+			echo '<div class="update-nag"><p>'; 
+			printf(__('<b>Triplette Cookie Law Plugin</b> installed. Fill out Cookie Policy and Privacy Policy pages, then the activate plugin in Settings > Cookie Settings | <a href="%1$s">Hide Notice</a>'), '?triplette_install_nag_ignore=0');
+			echo "</p></div>";
+		}
+	}
+
+	public function install_nag_ignore() {
+		global $current_user;
+			$user_id = $current_user->ID;
+			/* If user clicks to ignore the notice, add that to their user meta */
+			if ( isset($_GET['triplette_install_nag_ignore']) && '0' == $_GET['triplette_install_nag_ignore'] ) {
+				 add_user_meta($user_id, 'triplette_install_nag_ignore', 'true', true);
+		}
+	}
+
+	/**
 	 * Main Triplette_Cookie_Law Instance
 	 *
 	 * Ensures only one instance of Triplette_Cookie_Law is loaded or can be loaded.
@@ -338,6 +428,9 @@ class Triplette_Cookie_Law {
 	 */
 	public function install () {
 		$this->_log_version_number();
+		
+		// Create Privacy Policy e Cookie Policy Pages
+		$this->create_pages();		
 	} // End install ()
 
 	/**
