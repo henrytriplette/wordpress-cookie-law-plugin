@@ -119,7 +119,7 @@ class Triplette_Cookie_Law
 
         // Load admin JS & CSS
         add_action('admin_enqueue_scripts', array( $this, 'admin_enqueue_scripts' ), 10, 1);
-        add_action('admin_enqueue_scripts', array( $this, 'admin_enqueue_styles' ), 10, 1);    
+        add_action('admin_enqueue_scripts', array( $this, 'admin_enqueue_styles' ), 10, 1);
 
         // Load API for generic admin functions
         if (is_admin() ) {
@@ -193,9 +193,9 @@ class Triplette_Cookie_Law
      */
     public function enqueue_scripts()
     {
-        wp_register_script($this->_token . '-frontend', esc_url($this->assets_url) . 'js/frontend' . $this->script_suffix . '.js', array( 'jquery' ), $this->_version);            
+        wp_register_script($this->_token . '-frontend', esc_url($this->assets_url) . 'js/frontend' . $this->script_suffix . '.js', array( 'jquery' ), $this->_version);
         wp_register_script($this->_token . '-frontend-params', esc_url($this->assets_url) . 'js/frontend-params.js', array( 'jquery' ), $this->_version);
-        
+
         if (get_option('wpt_triplette_cookies_enable') == 'enable' ) {
 
             wp_enqueue_script($this->_token . '-frontend');
@@ -203,19 +203,20 @@ class Triplette_Cookie_Law
 
             // Prepare Params
             $cookie_type = get_option('wpt_triplette_cookies_type');
-            $cookie_type_format = '';
+            $cookie_type_format = Array();
+
             foreach ($cookie_type as $type) {
                 $cookie_type_format[$type] = Array();
             }
-            
+
             $hideprivacysettingstab = false;
-            if (get_option('wpt_triplette_cookies_privacy_tab') == 'on' ) { $hideprivacysettingstab = true; 
+            if (get_option('wpt_triplette_cookies_privacy_tab') == 'on' ) { $hideprivacysettingstab = true;
             }
-            
+
             $ignoreDoNotTrack = false;
-            if (get_option('wpt_triplette_cookies_do_not_track') == 'on' ) { $ignoreDoNotTrack = true; 
+            if (get_option('wpt_triplette_cookies_do_not_track') == 'on' ) { $ignoreDoNotTrack = true;
             }
-            
+
             // Create Params
             $params = array(
             'triplette_cookies_type' => json_encode($cookie_type_format),
@@ -228,7 +229,7 @@ class Triplette_Cookie_Law
             'triplette_cookies_privacy_tab' => $hideprivacysettingstab,
             'triplette_cookies_banner_display' => get_option('wpt_triplette_cookies_banner_display'),
             'triplette_cookies_do_not_track' => $ignoreDoNotTrack,
-              
+
             'tct_general_social_media_title' => get_option('wpt_tct_general_social_media_title'),
             'tct_general_social_media_description' => get_option('wpt_tct_general_social_media_description'),
             'tct_general_analytics_title' => get_option('wpt_tct_general_analytics_title'),
@@ -268,8 +269,8 @@ class Triplette_Cookie_Law
             'tct_global_always_allow' => get_option('wpt_tct_global_always_allow'),
             'tct_global_never_allow' => get_option('wpt_tct_global_never_allow'),
             'tct_general_close_window' => get_option('wpt_tct_general_close_window'),
-              
-            );        
+
+            );
             wp_localize_script($this->_token . '-frontend-params', 'tC', $params);
         }
     } // End enqueue_scripts ()
@@ -359,14 +360,14 @@ class Triplette_Cookie_Law
         'post_title' => 'Cookie Policy', //The title of your post.
         'post_type' => 'page', //Sometimes you want to post a page.
         'tags_input' => 'cookie policy, cookies', //For tags.
-        );  
-        
+        );
+
         // Insert the post into the database
         // $page = get_page_by_title( 'Cookie Policy' );
         // if ( is_null($page) ) {
         wp_insert_post($cookie_policy);
         // }
-            
+
         // get contents of a file into a string
         /*
         $filename = plugin_dir_url( __FILE__ )."resources/privacy_policy.txt";
@@ -384,8 +385,8 @@ class Triplette_Cookie_Law
         'post_title' => 'Privacy Policy', //The title of your post.
         'post_type' => 'page', //Sometimes you want to post a page.
         'tags_input' => 'privacy policy, privacy', //For tags.
-        );  
-        
+        );
+
         // Insert the post into the database
         // $page = get_page_by_title( 'Privacy Policy' );
         // if ( is_null($page) ) {
@@ -407,7 +408,7 @@ class Triplette_Cookie_Law
         $user_id = $current_user->ID;
         /* Check that the user hasn't already clicked to ignore the message */
         if (! get_user_meta($user_id, 'triplette_install_nag_ignore') ) {
-            echo '<div class="update-nag"><p>'; 
+            echo '<div class="update-nag"><p>';
             printf(__('<b>Triplette Cookie Law Plugin</b> installed. Fill out Cookie Policy and Privacy Policy pages, then the activate plugin in Settings > Cookie Settings | <a href="%1$s">Hide Notice</a>'), '?triplette_install_nag_ignore=0');
             echo "</p></div>";
         }
@@ -471,9 +472,9 @@ class Triplette_Cookie_Law
     public function install()
     {
         $this->_log_version_number();
-        
+
         // Create Privacy Policy e Cookie Policy Pages
-        $this->create_pages();        
+        $this->create_pages();
     } // End install ()
 
     /**
