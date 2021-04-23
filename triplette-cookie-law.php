@@ -17,16 +17,17 @@
  * @since 1.0.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) exit;
+if (! defined('ABSPATH') ) { exit;
+}
 
 // Load plugin class files
-require_once( 'includes/class-triplette-cookie-law.php' );
-require_once( 'includes/class-triplette-cookie-law-settings.php' );
+require_once 'includes/class-triplette-cookie-law.php';
+require_once 'includes/class-triplette-cookie-law-settings.php';
 
 // Load plugin libraries
-require_once( 'includes/lib/class-triplette-cookie-law-admin-api.php' );
-require_once( 'includes/lib/class-triplette-cookie-law-post-type.php' );
-require_once( 'includes/lib/class-triplette-cookie-law-taxonomy.php' );
+require_once 'includes/lib/class-triplette-cookie-law-admin-api.php';
+require_once 'includes/lib/class-triplette-cookie-law-post-type.php';
+require_once 'includes/lib/class-triplette-cookie-law-taxonomy.php';
 
 /**
  * Returns the main instance of Triplette_Cookie_Law to prevent the need to use globals.
@@ -34,14 +35,15 @@ require_once( 'includes/lib/class-triplette-cookie-law-taxonomy.php' );
  * @since  1.0.0
  * @return object Triplette_Cookie_Law
  */
-function Triplette_Cookie_Law () {
-	$instance = Triplette_Cookie_Law::instance( __FILE__, '1.0.0' );
+function Triplette_Cookie_Law()
+{
+    $instance = Triplette_Cookie_Law::instance(__FILE__, '1.0.0');
 
-	if ( is_null( $instance->settings ) ) {
-		$instance->settings = Triplette_Cookie_Law_Settings::instance( $instance );
-	}
+    if (is_null($instance->settings) ) {
+        $instance->settings = Triplette_Cookie_Law_Settings::instance($instance);
+    }
 
-	return $instance;
+    return $instance;
 }
 
 Triplette_Cookie_Law();
